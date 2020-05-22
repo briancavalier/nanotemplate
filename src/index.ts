@@ -17,7 +17,7 @@ export class Unsafe<A> {
 }
 
 // Values supported by render
-export type Content = number | boolean | string | Unsafe<string> | Template<readonly Content[]> | Iterable<Content>
+export type Content = number | boolean | string | Unsafe<string> | Renderable<readonly Content[]> | Iterable<Content>
 
 // Render a Renderable to an HTML string
 // This function will include UnsafeStrings verbatim, *without
